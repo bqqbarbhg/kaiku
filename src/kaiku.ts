@@ -278,9 +278,7 @@ const unionOfKeys = <A extends object, B extends object>(
   }
   return res as (keyof (A & B))[]
 }
-const assert: typeof __assert = __DEBUG__
-  ? __assert
-  : (undefined as unknown as typeof __assert)
+const assert: typeof __assert = __DEBUG__ ? __assert : (undefined as unknown as typeof __assert);
 
 //
 //  State management
